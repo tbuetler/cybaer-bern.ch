@@ -11,7 +11,7 @@ export class MainPage extends HTMLElement {
 
     async loadStyles() {
         try {
-            const response = await fetch('/css/main-page.css');
+            const response = await fetch('./css/main-page.css');
             if (response.ok) {
                 const styles = await response.text();
                 const styleElement = document.createElement('style');
@@ -27,7 +27,7 @@ export class MainPage extends HTMLElement {
 
     async loadTemplate() {
         try {
-            const response = await fetch('/templates/main-page.html');
+            const response = await fetch('./templates/main-page.html');
             if (response.ok) {
                 const html = await response.text();
                 const templateContainer = document.createElement('div');

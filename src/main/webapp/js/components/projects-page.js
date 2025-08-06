@@ -37,7 +37,7 @@ export class ProjectsPage extends HTMLElement {
 
     async loadStyles() {
         try {
-            const response = await fetch('/css/projects-page.css');
+            const response = await fetch('./css/projects-page.css');
             if (response.ok) {
                 const styles = await response.text();
                 const styleElement = document.createElement('style');
@@ -53,7 +53,7 @@ export class ProjectsPage extends HTMLElement {
 
     async loadTemplate() {
         try {
-            const response = await fetch('/templates/projects-page.html');
+            const response = await fetch('./templates/projects-page.html');
             if (response.ok) {
                 const html = await response.text();
                 const templateContainer = document.createElement('div');
@@ -174,6 +174,7 @@ export class ProjectsPage extends HTMLElement {
             });
         }
     }
+
 }
 
 customElements.define('projects-page', ProjectsPage);
