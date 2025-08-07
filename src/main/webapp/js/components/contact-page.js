@@ -46,20 +46,6 @@ export class ContactPage extends HTMLElement {
             console.error('Error loading template for contact-page:', error);
         }
     }
-
-    handleSubmit(event) {
-        event.preventDefault();
-
-        const formData = new FormData(event.target);
-        const formValues = Object.fromEntries(formData.entries());
-
-        console.log('Form submitted with values:', formValues);
-
-        // Here you would typically send the data to your backend
-        // For now, let's just show an alert
-        alert('Vielen Dank für Ihre Nachricht! Ich werde mich so bald wie möglich bei Ihnen melden.');
-        event.target.reset();
-    }
 }
 
 customElements.define('contact-page', ContactPage);
