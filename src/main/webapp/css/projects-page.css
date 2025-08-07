@@ -5,27 +5,29 @@
     font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
 }
 
+/* LAYOUT CONTAINERS */
 .projects-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
+/* HERO SECTION */
 .projects-container h2 {
-    color: #58a6ff;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 700;
-    text-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+    color: #7c3aed;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    font-family: 'JetBrains Mono', monospace;
 }
 
+/* PROJECT GRID */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
+/* PROJECT CARDS */
 .project-card {
     background: #161b22;
     border: 1px solid #30363d;
@@ -57,9 +59,9 @@
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     border-color: #58a6ff;
-    box-shadow: 0 16px 48px rgba(88, 166, 255, 0.3);
+    box-shadow: 0 12px 40px rgba(88, 166, 255, 0.2);
 }
 
 .project-image {
@@ -99,7 +101,7 @@
 .project-title {
     color: #58a6ff;
     margin: 0 0 1rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -110,6 +112,7 @@
     margin-bottom: 1.5rem;
 }
 
+/* TECH STACK */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +123,7 @@
 .project-tag {
     background: #21262d;
     color: #00d4aa;
-    padding: 0.4rem 0.8rem;
+    padding: 0.3rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;
     border: 1px solid #30363d;
@@ -135,6 +138,7 @@
     transform: translateY(-1px);
 }
 
+/* ADD PROJECT CARD */
 .add-project {
     background: linear-gradient(135deg, #00d4aa, #7c3aed);
     color: #0d1117;
@@ -166,8 +170,8 @@
 }
 
 .add-project:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(0, 212, 170, 0.4);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 212, 170, 0.4);
 }
 
 .add-icon {
@@ -185,7 +189,7 @@
     font-weight: 600;
 }
 
-/* Project Detail View */
+/* PROJECT DETAIL VIEW */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -220,24 +224,10 @@
 }
 
 .project-header .project-title {
-    color: #58a6ff;
+    color: #7c3aed;
     margin: 0;
-    font-size: 2rem;
-    text-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
-}
-
-.project-image {
-    width: 100%;
-    height: 400px;
-    background: linear-gradient(135deg, #21262d, #30363d);
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    margin-bottom: 3rem;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid #30363d;
-    position: relative;
-    overflow: hidden;
+    font-size: 1.8rem;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .project-content {
@@ -345,6 +335,7 @@
     font-size: 1.1rem;
 }
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
     .project-content {
         grid-template-columns: 1fr;
@@ -356,7 +347,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .projects-container {
         padding: 1rem;
     }
@@ -374,7 +365,7 @@
     }
 }
 
-/* Custom scrollbar */
+/* CUSTOM SCROLLBAR */
 ::-webkit-scrollbar {
     width: 8px;
 }
