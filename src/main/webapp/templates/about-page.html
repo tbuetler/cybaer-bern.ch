@@ -1,59 +1,125 @@
 <div class="about-container">
-    <div class="about-header">
-        <h2>Über Mich</h2>
-        <p>Computer Science Student & Swiss Army Reconnaissance Officer</p>
+    <div class="hero">
+        <div class="terminal-header">
+            <div class="terminal-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+            </div>
+            <div class="terminal-title">tbuetler@cybaer-bern:~$</div>
+        </div>
+        <div class="terminal-content">
+            <div class="command-line">
+                <span class="prompt">tbuetler@cybaer-bern:~$</span>
+                <span class="command">cat about.txt</span>
+            </div>
+            <div class="output">
+                <h2>About CyBär:bern</h2>
+                <p>// Computer Science Student & Cybersecurity Enthusiast</p>
+            </div>
+            <div class="command-line">
+                <span class="prompt">tbuetler@cybaer-bern:~$</span>
+                <span class="command typing">whoami --verbose</span>
+            </div>
+        </div>
     </div>
 
     <section class="profile-section">
-        <div class="profile-image">
-            <img src="../img/cybaer-logo_transparent_inverted.svg" alt="Profilbild" onerror="this.src='https://via.placeholder.com/400x500/2a2a2a/00ff00?text=Terminal'">
-        </div>
-        <div class="profile-info">
-            <h3>$ whoami</h3>
-            <p>Computer Science Student mit einer Leidenschaft für elegante Systemarchitekturen und minimalistisches Design.
-                Als Leutnant und Zugführer bei den Aufklärern der Schweizer Armee bringe ich militärische Präzision
-                in meine Softwareentwicklung.</p>
+        <h2>$ whoami</h2>
+        <div class="profile-grid">
+            <div class="profile-image-card">
+                <img src="../img/cybaer-logo_transparent_inverted.svg" alt="Profile"
+                     onerror="this.src='https://via.placeholder.com/400x500/2a2a2a/00ff00?text=Terminal'">
+            </div>
+            <div class="profile-info">
+                <p>Computer Science student with a passion for elegant system architectures and minimalist design.
+                    As an Leutnant in the Swiss Army reconnaissance unit, I bring military precision to my software development.</p>
 
-            <p>Cybär Bern ist meine digitale Spielwiese für experimentelle Projekte, Open-Source-Contributions
-                und technische Dokumentation. Hier entstehen Lösungen, die funktional, sicher und ästhetisch ansprechend sind.</p>
+                <p>CyBär:bern is my digital playground for experimental projects, open-source contributions
+                    and technical documentation. Here I create solutions that are functional, secure and aesthetically pleasing.</p>
 
-            <p>Wenn ich nicht gerade Code schreibe oder im Militärdienst bin, optimiere ich meine Arch Linux Setup,
-                experimentiere mit Self-Hosted Services und entwickle Tools für die nächste Generation digitaler Infrastruktur.</p>
+                <p>When I'm not writing code or on military service, I optimize my Arch Linux setup,
+                    experiment with self-hosted services and develop tools for the next generation of digital infrastructure.</p>
+            </div>
         </div>
     </section>
 
-    <section class="skills-section">
-        <h3>// Skills & Technologies</h3>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h4>Core Development</h4>
-                <ul class="skill-list">
-                    <li>C/C++ & Rust</li>
-                    <li>Python & Go</li>
-                    <li>JavaScript/TypeScript</li>
-                    <li>System Programming</li>
-                    <li>Algorithm Design</li>
-                </ul>
+    <section class="skills-board">
+        <h2>{ skills & technologies }</h2>
+        <div class="status-grid">
+            <div class="status-card">
+                <div class="status-header">
+                    <h3>Core Development</h3>
+                    <div class="status-indicator secure"></div>
+                </div>
+                <div class="status-details">
+                    <div class="metric">
+                        <span class="metric-label">Languages:</span>
+                        <span class="metric-value green">Assembly / C / Java </span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Scripting:</span>
+                        <span class="metric-value blue">Python & Go</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Web:</span>
+                        <span class="metric-value">JavaScript</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Focus:</span>
+                        <span class="metric-value blue">System Engineering</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-category">
-                <h4>Infrastructure & DevOps</h4>
-                <ul class="skill-list">
-                    <li>Arch Linux & Unix Systems</li>
-                    <li>Docker & Kubernetes</li>
-                    <li>CI/CD Pipelines</li>
-                    <li>Network Security</li>
-                    <li>Cloud Architecture</li>
-                </ul>
+
+            <div class="status-card">
+                <div class="status-header">
+                    <h3>Infrastructure & DevOps</h3>
+                    <div class="status-indicator active"></div>
+                </div>
+                <div class="status-details">
+                    <div class="metric">
+                        <span class="metric-label">OS:</span>
+                        <span class="metric-value green">Arch Linux & Unix</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Containers:</span>
+                        <span class="metric-value blue">Docker & Kubernetes</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">CI/CD:</span>
+                        <span class="metric-value">Pipeline Automation</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Security:</span>
+                        <span class="metric-value blue">Network Hardening</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-category">
-                <h4>Military & Leadership</h4>
-                <ul class="skill-list">
-                    <li>Reconnaissance Operations</li>
-                    <li>Team Leadership</li>
-                    <li>Strategic Planning</li>
-                    <li>Risk Assessment</li>
-                    <li>Crisis Management</li>
-                </ul>
+
+            <div class="status-card">
+                <div class="status-header">
+                    <h3>Military & Leadership</h3>
+                    <div class="status-indicator operational"></div>
+                </div>
+                <div class="status-details">
+                    <div class="metric">
+                        <span class="metric-label">Role:</span>
+                        <span class="metric-value green">Reconnaissance Ops</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Leadership:</span>
+                        <span class="metric-value blue">Team Management</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Planning:</span>
+                        <span class="metric-value">Strategic Analysis</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Risk:</span>
+                        <span class="metric-value blue">Crisis Management</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -93,37 +159,61 @@
     </section>
 
     <section class="interests-section">
-        <h3>{ interests }</h3>
-        <div class="interests-grid">
-            <div class="interest-item">
-                <div class="interest-icon">⚡</div>
-                <h4>System Architecture</h4>
-                <p>Design und Optimierung komplexer Systemarchitekturen für maximale Effizienz.</p>
+        <h2>{ interests & focus_areas }</h2>
+        <div class="capabilities-grid">
+            <div class="capability">
+                <div class="capability-icon">⚡</div>
+                <h3>System Architecture</h3>
+                <p>Design and optimization of complex system architectures for maximum efficiency.</p>
+                <div class="tech-stack">
+                    <span class="tech">Performance</span>
+                    <span class="tech">Scalability</span>
+                </div>
             </div>
-            <div class="interest-item">
-                <div class="interest-icon">🛡️</div>
-                <h4>Cybersecurity</h4>
-                <p>Entwicklung sicherer Systeme und Penetrationstesting-Methoden.</p>
+            <div class="capability">
+                <div class="capability-icon">🛡️</div>
+                <h3>Cybersecurity</h3>
+                <p>Development of secure systems and penetration testing methodologies.</p>
+                <div class="tech-stack">
+                    <span class="tech">PenTesting</span>
+                    <span class="tech">OPSEC</span>
+                </div>
             </div>
-            <div class="interest-item">
-                <div class="interest-icon">🐧</div>
-                <h4>Linux & FOSS</h4>
-                <p>Arch Linux Power User und Verfechter freier Software-Philosophie.</p>
+            <div class="capability">
+                <div class="capability-icon">🐧</div>
+                <h3>Linux & FOSS</h3>
+                <p>Arch Linux power user and advocate of free software philosophy.</p>
+                <div class="tech-stack">
+                    <span class="tech">Arch Linux</span>
+                    <span class="tech">Self-Hosting</span>
+                </div>
             </div>
-            <div class="interest-item">
-                <div class="interest-icon">📡</div>
-                <h4>Self-Hosting</h4>
-                <p>Aufbau und Wartung eigener Server-Infrastrukturen und Cloud-Services.</p>
+            <div class="capability">
+                <div class="capability-icon">📡</div>
+                <h3>Infrastructure</h3>
+                <p>Building and maintaining own server infrastructures and cloud services.</p>
+                <div class="tech-stack">
+                    <span class="tech">DevOps</span>
+                    <span class="tech">Monitoring</span>
+                </div>
             </div>
-            <div class="interest-item">
-                <div class="interest-icon">🎯</div>
-                <h4>Military Tactics</h4>
-                <p>Strategische Planung und Aufklärungsoperationen in komplexen Umgebungen.</p>
+            <div class="capability">
+                <div class="capability-icon">🎯</div>
+                <h3>Military Tactics</h3>
+                <p>Strategic planning and reconnaissance operations in complex environments.</p>
+                <div class="tech-stack">
+                    <span class="tech">Strategy</span>
+                    <span class="tech">Leadership</span>
+                </div>
             </div>
-            <div class="interest-item">
-                <div class="interest-icon">🚀</div>
-                <h4>Performance</h4>
-                <p>Optimierung von Code und Systemen für minimalen Ressourcenverbrauch.</p>
+            <div class="capability">
+                <div class="capability-icon">🚀</div>
+                <h3>Performance</h3>
+                <p>Optimization of code and systems for minimal resource consumption.</p>
+                <div class="tech-stack">
+                    <span class="tech">Optimization</span>
+                    <span class="tech">Efficiency</span>
+                </div>
             </div>
         </div>
     </section>
