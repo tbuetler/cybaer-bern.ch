@@ -3,19 +3,25 @@ name: Deploy to Raspberry Pi
 on:
   push:
     branches:
-      - main  # Branch, den du deployen willst
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: SSH to Raspberry Pi and pull
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.7
         with:
           host: ${{ secrets.RPI_HOST }}
           username: ${{ secrets.RPI_USER }}
           key: ${{ secrets.RPI_KEY }}
+          port: 22
           script: |
             cd /var/www/website
-            git pull
+            git reset --hard
+            git pull origin main
             sudo systemctl reload nginx
